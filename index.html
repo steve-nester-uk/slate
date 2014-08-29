@@ -8,7 +8,7 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Transaction API Reference</title>
+    <title>API Reference</title>
 
     <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -45,6 +45,14 @@
                 'shell',
               
             
+              
+                'ruby',
+              
+            
+              
+                'python',
+              
+            
           
         ]);
       });
@@ -53,14 +61,22 @@
 
   <body class="index">
     <div class="tocify-wrapper">
-     <!-- <img src="images/logo.png" /> -->
+      <img src="images/logo.png" />
       <div id="toc">
       </div>
+      
+      <ul class="toc-footer">
+        
+          <li><a href='#'>Sign Up for a Developer Key</a></li>
+        
+          <li><a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
+        
+      </ul>
       
     </div>
     <div class="page-wrapper">
       <div class="content">
-        <h1 id="rest-api">REST API</h1>
+        <h1 id="introduction">Introduction</h1>
 
 <p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
 
@@ -79,9 +95,9 @@
 </pre><pre class="highlight python"><span class="kn">import</span> <span class="s">'kittn'</span>
 
 <span class="n">api</span> <span class="o">=</span> <span class="n">Kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</pre><pre class="highlight plaintext"># With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+</pre><pre class="highlight shell"><span class="c"># With shell, you can just pass the correct header with each request</span>
+curl <span class="s2">"api_endpoint_here"</span>
+  -H <span class="s2">"Authorization: meowmeowmeow"</span>
 </pre>
 <blockquote>
 <p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
@@ -269,7 +285,15 @@ Remember — a happy kitten is an authenticated kitten!
           
             
               
-                <a href="#" data-language-name="shell">curl</a>
+                <a href="#" data-language-name="shell">shell</a>
+              
+            
+              
+                <a href="#" data-language-name="ruby">ruby</a>
+              
+            
+              
+                <a href="#" data-language-name="python">python</a>
               
             
           
